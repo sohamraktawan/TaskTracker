@@ -77,7 +77,7 @@ function CreateTask() {
     };
     console.log(newPost);
     axios
-      .post("http://localhost:3001/create", newPost)
+      .post("https://task-tracker9.herokuapp.com/create", newPost)
       .then((res) => {
         console.log(res);
         history.push("/home");
@@ -91,7 +91,7 @@ function CreateTask() {
     let token = localStorage.getItem("token");
     if (token) {
       axios
-        .post("http://localhost:3001/auth", { token: token })
+        .post("https://task-tracker9.herokuapp.com/auth", { token: token })
         .then((res) => {
           if (res.data === false) {
             history.push("/login");

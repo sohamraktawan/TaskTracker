@@ -15,7 +15,7 @@ function Right() {
     const completed = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -38,7 +38,7 @@ function Right() {
     const authToken = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
             .then(res=>{
                 console.log(res.data)
                 if(res.data === false){
@@ -60,7 +60,7 @@ function Right() {
     const authToken1 = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -83,7 +83,7 @@ function Right() {
     const authToken2 = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -113,7 +113,7 @@ function Right() {
     const Trending = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('https://localhost:3001/auth', {token:token})
+            axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     

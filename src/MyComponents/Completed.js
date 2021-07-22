@@ -33,7 +33,7 @@ function Tasks() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3001/tasks")
+    fetch("https://task-tracker9.herokuapp.com/tasks")
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -48,7 +48,7 @@ function Tasks() {
 
               let token = localStorage.getItem('token');
           if(token){
-              axios.post('http://localhost:3001/auth', {token:token})
+              axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
               .then(res=>{
                   if(res.data === false){
                       

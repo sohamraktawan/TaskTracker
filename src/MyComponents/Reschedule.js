@@ -82,7 +82,7 @@ function timeSince(date) {
 
         }
         console.log(newPost) 
-        axios.post('http://localhost:3001/create', newPost)
+        axios.post('https://task-tracker9.herokuapp.com/create', newPost)
         .then(res=>{
             console.log(res);
             history.push("/home")
@@ -96,7 +96,7 @@ function timeSince(date) {
     useEffect(() => {
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     

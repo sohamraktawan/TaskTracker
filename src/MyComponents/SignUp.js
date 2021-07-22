@@ -51,7 +51,7 @@ function SignUp() {
         }
         console.log(newUser)
         //axios.defaults.withCredentials = true;
-        axios.post('http://localhost:3001/signup', newUser )
+        axios.post('https://task-tracker9.herokuapp.com/signup', newUser )
 
             .then(async (res)=>{
             
