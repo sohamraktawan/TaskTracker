@@ -74,7 +74,7 @@ function Login() {
 
 
             <div className="login">
-            <h2 className="login_head">Task Manager App</h2>
+            <h2 className="login_head">Task Tracker App</h2>
             <h2 className="login_head">Log in</h2>
             <form action="">
                 <div className="login_input_container"><input onChange={handleChange} type="email" name="email" id="email" className="login_input" value={input.email} autoComplete="off" placeholder="email"/></div>

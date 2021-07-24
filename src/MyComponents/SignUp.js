@@ -86,7 +86,7 @@ function SignUp() {
 
 
         <div className="login" >
-            <h2 className='login_head'>Task Manager App</h2>
+            <h2 className='login_head'>Task Tracker App</h2>
             <h2 className='login_head'>Sign Up</h2>
             <form action="">
 
