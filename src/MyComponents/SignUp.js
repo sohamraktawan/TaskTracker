@@ -51,7 +51,7 @@ function SignUp() {
         }
         console.log(newUser)
         //axios.defaults.withCredentials = true;
-        axios.post('https://task-tracker9.herokuapp.com/signup', newUser )
+        axios.post('https://task-tracker-backend-production.up.railway.app/signup', newUser )
 
             .then(async (res)=>{
             

@@ -82,7 +82,7 @@ function timeSince(date) {
 
         }
         console.log(newPost) 
-        axios.post('https://task-tracker9.herokuapp.com/create', newPost)
+        axios.post('https://task-tracker-backend-production.up.railway.app/create', newPost)
         .then(res=>{
             console.log(res);
             history.push("/home")
@@ -96,7 +96,7 @@ function timeSince(date) {
     useEffect(() => {
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
+            axios.post('https://task-tracker-backend-production.up.railway.app/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     

@@ -14,7 +14,7 @@ const [overdue, setoverdue] = useState(0)
 useEffect(() => {
     let token = localStorage.getItem('token');
     if(token){
-        axios.post('https://task-tracker9.herokuapp.com/auth', {token:token})
+        axios.post('https://task-tracker-backend-production.up.railway.app/auth', {token:token})
         .then(res=>{
             if(res.data === false){
                 
@@ -29,7 +29,7 @@ useEffect(() => {
         })
     }
 
-    fetch("https://task-tracker9.herokuapp.com/tasks")
+    fetch("https://task-tracker-backend-production.up.railway.app/tasks")
     .then((res) => {
       if (res.ok) {
         return res.json();

@@ -77,7 +77,7 @@ function CreateTask() {
     };
     console.log(newPost);
     axios
-      .post("https://task-tracker9.herokuapp.com/create", newPost)
+      .post("https://task-tracker-backend-production.up.railway.app/create", newPost)
       .then((res) => {
         console.log(res);
         history.push("/home");
@@ -91,7 +91,7 @@ function CreateTask() {
     let token = localStorage.getItem("token");
     if (token) {
       axios
-        .post("https://task-tracker9.herokuapp.com/auth", { token: token })
+        .post("https://task-tracker-backend-production.up.railway.app/auth", { token: token })
         .then((res) => {
           if (res.data === false) {
             history.push("/login");

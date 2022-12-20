@@ -74,7 +74,7 @@ function Task(props) {
       id: task._id,
     };
     axios
-      .post("https://task-tracker9.herokuapp.com/complete", upobj)
+      .post("https://task-tracker-backend-production.up.railway.app/complete", upobj)
       .then((res) => {
         console.log(res);
       })
@@ -87,7 +87,7 @@ function Task(props) {
     const upobj = {
       id:task._id
     }
-      axios.post("https://task-tracker9.herokuapp.com/delete", upobj)
+      axios.post("https://task-tracker-backend-production.up.railway.app/delete", upobj)
       .then(res=>{
           console.log(res)
       })
