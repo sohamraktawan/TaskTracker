@@ -5,6 +5,7 @@ The priority and reschedule feature makes the app really useful. The tasks are s
 Built with ReactJS, NodeJS, ExpressJS and MongoDB <br>
 It is also equipped with JWT authentication <br>
 Frontend is deployed on Netlify and backend is deployed on Heroku (discontinued) <br>
+Backend Repo Link : https://github.com/sohamraktawan/Postsome-Backend
 
 ## Tasks displayed based on priority
 ![tasks1](https://user-images.githubusercontent.com/85399779/219852793-3cc7db07-11c7-4111-b3ee-5354f72d4808.jpg)
